@@ -1,0 +1,500 @@
+
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    color: #20232a;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* ==============================
+   CABEÇALHO
+============================== */
+
+.header {
+    background: #10131d;
+    color: white;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 15px #00000020;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #00d4ff;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00d4ff;
+}
+
+.menu-button {
+    display: none;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* ==============================
+   DESTAQUE PRINCIPAL
+============================== */
+
+.hero {
+    background: linear-gradient(120deg, #10131d, #173b59);
+    color: white;
+    padding: 110px 0;
+}
+
+.hero-content {
+    max-width: 1150px;
+}
+
+.tag {
+    color: #00aeea;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    max-width: 700px;
+    font-size: clamp(36px, 6vw, 60px);
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.hero p {
+    max-width: 550px;
+    color: #d0d8e2;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+/* ==============================
+   BOTÕES
+============================== */
+
+.button {
+    display: inline-block;
+    background: #00bde9;
+    color: #10131d;
+    padding: 14px 26px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #00d4ff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px #00bde940;
+}
+
+/* ==============================
+   SEÇÕES
+============================== */
+
+.section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section h2,
+.dark-section h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.section-title {
+    margin-bottom: 32px;
+}
+
+.section-title p {
+    color: #687080;
+    margin-top: 8px;
+}
+
+/* ==============================
+   CARDS DE NOTÍCIAS
+============================== */
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    align-items: stretch;
+}
+
+.news-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #0000000d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px #0000001a;
+}
+
+.news-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.news-card:hover img {
+    transform: scale(1.04);
+}
+
+.card-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.category {
+    color: #009ec8;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.card-content h3 {
+    margin: 12px 0;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.card-content p {
+    color: #687080;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.card-content a {
+    display: inline-block;
+    width: fit-content;
+    color: #008eb8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card-content a:hover {
+    color: #005d7a;
+    transform: translateX(5px);
+}
+
+/* ==============================
+   SEÇÃO GAMES
+============================== */
+
+.dark-section {
+    background: #10131d;
+    color: white;
+}
+
+.dark-section p {
+    color: #c5cbd5;
+}
+
+/* ==============================
+   SEÇÃO OFERTAS
+============================== */
+
+.offers-section {
+    background: #e9eef3;
+}
+
+.ad-placeholder {
+    margin-top: 30px;
+    padding: 35px 15px;
+    border: 2px dashed #9ba8b7;
+    border-radius: 8px;
+    text-align: center;
+    color: #596575;
+    font-weight: bold;
+}
+
+.ad-placeholder small {
+    display: block;
+    font-weight: normal;
+    margin-top: 8px;
+}
+
+/* ==============================
+   RODAPÉ
+============================== */
+
+.footer {
+    background: #10131d;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer p {
+    color: #aeb8c6;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 22px;
+}
+
+.footer-links a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* ==============================
+   PÁGINAS DE NOTÍCIAS
+============================== */
+
+.article-container {
+    max-width: 900px;
+}
+
+.article-header {
+    padding: 55px 0 30px;
+}
+
+.article-header h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+.article-header p {
+    font-size: 18px;
+    color: #687080;
+    margin-bottom: 15px;
+}
+
+.article-header small {
+    color: #777;
+}
+
+.article-image {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.article-content {
+    max-width: 760px;
+    margin: 40px auto 70px;
+}
+
+.article-content h2 {
+    font-size: 25px;
+    margin: 35px 0 12px;
+}
+
+.article-content p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #505967;
+    margin-bottom: 20px;
+}
+
+.article-ad {
+    padding: 45px 10px;
+    border: 2px dashed #9ba8b7;
+    text-align: center;
+    border-radius: 8px;
+    margin: 35px 0;
+    color: #687080;
+}
+
+.product-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin: 25px 0;
+}
+
+.product-box small {
+    color: #687080;
+    display: block;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* ==============================
+   TABLETS
+============================== */
+
+@media (max-width: 900px) {
+
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* ==============================
+   CELULARES
+============================== */
+
+@media (max-width: 768px) {
+
+    .menu-button {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #10131d;
+        padding: 20px;
+        flex-direction: column;
+        gap: 18px;
+        box-shadow: 0 8px 15px #00000030;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-card img {
+        height: 230px;
+    }
+
+    .hero {
+        padding: 75px 0;
+    }
+
+    .section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .section h2,
+    .dark-section h2 {
+        font-size: 27px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+}
+
+/* ==============================
+   TELAS MUITO PEQUENAS
+============================== */
+
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .card-content {
+        padding: 19px;
+    }
+
+}
+
+/* ==============================
+   ACESSIBILIDADE
+============================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+
+}
